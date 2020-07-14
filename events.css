@@ -1,0 +1,909 @@
+html, body {
+	overflow-x: hidden;
+	font-family: 'Leckerli One', cursive;
+    width: 100%;
+		}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-transform: none;
+	font-weight: 600;
+	font-family: 'Leckerli One', cursive;
+	text-align: center;
+}
+
+hr {
+	border-color: #ffc266;
+	border-width: 5px;
+	max-width: 100%;
+}
+
+
+.container-h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 50px auto;
+    color: #333;
+    font-family: 'Leckerli One', cursive;
+    
+}
+
+.btn,
+.btn:focus {
+	color: #fff;
+	background-color: #182c39;
+	margin: 20px auto;
+	font-weight: 500;
+	display: table;
+	padding: 10px;
+	border: 1px solid #182c39;
+  margin-left:50%;
+  border-radius: 0;
+}
+
+.btn:hover,
+.btn:focus {
+	color: #182c39;
+	background-color: transparent;
+	border: 1px solid #182c39;
+}
+
+.hr-h3s {
+	border: 3px solid #E94B3C;
+	width: 70px;
+	margin: 0 auto 35px auto;
+}
+
+.bg-section h2 {
+	font-family: 'Leckerli One', cursive;
+	text-transform: none;
+	margin: 50px 0;
+	padding: 25px 20px;
+	border-radius: 50px;
+}
+
+.slideanim {
+	visibility: hidden;
+}
+
+.slide {
+	animation-name: slide;
+	-webkit-animation-name: slide;
+	-moz-animation-name: slide;
+	animation-duration: 1.5s;
+	-webkit-animation-duration: 1.5s;
+	-moz-animation-duration: 1.5s;
+	visibility: visible;
+}
+
+@keyframes slide {
+	0% {
+		opacity: 0;
+		transform: translateX(50%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+@-webkit-keyframes slide {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(50%);
+		transform: translateX(50%);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(0%);
+		transform: translateX(0%);
+	}
+}
+
+
+/*  ******* Header + Navigation ******* */
+
+.navbar {
+	background-color: orange;
+  border-color: rgb(51, 17, 0);
+	border-color: rgba(51, 17, 0, 0.2);
+	font-weight: 700;
+	padding: 15px 0;
+	transition: padding .5s;
+}
+
+.navbar .navbar-brand {
+	color: #fff;
+	font-family: 'Leckerli One', cursive;
+	font-weight: 500;
+	text-transform: none;
+	font-size: 25px;
+	padding-left: 15px;
+	text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+	color: #444;
+	transition: color 1s;
+}
+
+.navbar .navbar-nav {
+	padding-right: 50px;
+}
+
+.navbar .navbar-nav > li > a {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 16px;
+	color: #fff;
+	margin: auto 5px;
+  font-family: 'Leckerli One', cursive; 
+  text-shadow: #222 0.2em 0.2em 0.2em;   
+}
+
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus:hover {
+	color: #444;
+	transition: color .3s; 
+}
+
+
+.navbar .navbar-nav > li.active > a:hover,
+.navbar .navbar-nav > li.active > a:focus:hover {
+	background-color: transparent;
+}
+
+.navbar.scrolled {
+	box-shadow: 0 3px 3px rgba(0,0,0,0.1);
+	padding: 5px 0;
+	opacity: 0.9;
+}
+
+.jumbotron {
+	margin-bottom: 0px;
+    background-image: url(https://www.houstonisd.org/cms/lib2/TX01001591/Centricity/Domain/40697/19SummerCamp_LOGO.gif);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    height: 700px;
+}
+
+
+.jumbotron .header-content-inner {
+	font-weight: 700;
+	text-transform: none;
+	margin-bottom: 0;
+	margin: 200px;
+}
+
+.jumbotron h1 {
+	font-size: 55px;
+  font-family: 'Leckerli One', cursive;
+}
+
+.jumbotron h3 {
+	font-size: 35px;
+  font-family: 'Leckerli One', cursive;
+}
+
+
+
+/* ******* About ******* */
+
+.bg-about {
+	margin: auto 50px;
+	background-color: white;
+}
+
+#about h3 {
+	font-family: 'Leckerli One', cursive;
+	color: #ff6600;
+    
+
+}
+
+#about .about-antenagames p {
+	padding: 20px 80px;
+	font-weight: 500;
+	font-family: 'Leckerli One', cursive;
+	font-size: 15px;
+	color: #777;
+}
+
+p.first::first-letter {
+    font-size: 150%;
+    color: orange;
+}
+
+#about h1 {
+	padding-top: 35px;
+  font-family: 'Leckerli One', cursive;
+}
+
+
+#about .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+
+#about .hov-img * {
+	box-sizing: border-box;
+}
+
+#about .hov-img {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+#about .hov-img img {
+	max-width: 100%;
+}
+
+#about .hov-img-bottom {
+	display: block;
+}
+
+#about .hov-img-top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+    right: 0;
+	bottom: 0;
+    left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+#about .hov-img:hover .hov-img-top {
+	opacity: 1;
+}
+
+#about .hov-img-text {
+	text-align: center;
+	font-size: 18px;
+	display: inline-block;
+	position: absolute;
+  font-family: 'Leckerli One', cursive;
+	text-shadow: black .2em .2em .2em; 
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+#about .hov-img-text p {
+	font-size: 15px;
+	line-height: 1.2em;
+}
+
+#about .hov-img-slideup {
+	-moz-transform: translateY(100%);
+	-webkit-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	transform: translateY(100%);
+}
+
+#about .hov-img:hover .hov-img-slideup {
+	-moz-transform: translateY(0);
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.bg-games {
+	margin: auto 50px;
+  
+}
+
+#game .nav-pills {
+	background-color: orange;
+	border-color: transparent;
+	font-weight: 500;
+	color: #000;
+	margin: 25px;
+}
+
+#game .nav-pills > li > a,
+#game .nav-pills > li > a:focus {
+	font-weight: 500;
+	font-size: 15px;
+	color: #fff;
+	border-radius: 0;
+	border: 1px solid #fff;
+	text-transform: uppercase;
+	font-family: 'Leckerli One', cursive;
+
+}
+
+#game .nav-pills > li > a:hover,
+#game .nav-pills > li > a:focus:hover {
+	color: #fff;
+	background-color: #944743;
+}
+
+#game .nav-pills > li > a.active,
+#game .nav-pills > li  > a.active:focus {
+	background-color: #944743;
+	color: #fff;
+}
+
+#game .hr-menu {
+	border: 2px solid #182c39;
+	width: 100%;
+}
+
+#game .list-group-item {
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #555;
+	padding: 0 auto;
+}
+
+#game .tab-content  .tab-pane  h3 {
+	text-align: center;
+	font-family: 'Leckerli One', cursive;
+}
+
+#game .list-group-item:first-child {
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+}
+
+#game .list-group-item:last-child {
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+#game .list-group-item  h4 {
+	text-align: left;
+	color: #944743;
+	text-transform: none;
+	font-size: 18px;
+  font-family: 'Leckerli One', cursive;
+}
+
+#game .list-group-item  p {
+	text-align: left;
+	color: #585858;
+	font-weight: 500;
+	font-style: italic;
+	text-transform: none;
+	font-size: 14px;
+  font-family: 'Leckerli One', cursive;
+}
+
+#game .badge {
+	border-radius: 50px;
+	background-color: green;
+	font-size: 12px;
+	color: #fff;
+}
+
+#game .right-cover {
+	background-color: #fff;
+	color: orange;
+	text-shadow: #DC4C46 .1em .1em .1em;
+	padding: 10px;
+	text-transform: none;
+}
+
+
+/* ******* Service ******* */
+
+
+#media .media-round {
+	height: 100px;
+	width: 100px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	border: 8px solid orange;
+	text-align: center;
+	display: inline-block;
+	padding: 10px;
+	color: orange;
+}
+
+#media .media-round  i {
+	color: orange;
+	
+}
+
+#media h4 {
+	margin: 10px auto;
+	font-size: 20px;
+	color: #444;
+  font-weight: 700;
+  font-family: 'Leckerli One', cursive;
+}
+
+#media .round:hover .fa {
+	color: red;
+	transition: color 2s;
+	
+}
+
+#media .round:hover .media-round {
+	border-color: red;
+	transition: border-color 2s;
+}
+
+#media p {
+  font-family: 'Leckerli One', cursive;
+  color: #444;
+}
+
+
+/* ******* Gallery ******* */
+
+
+#gallery h3 {
+	font-family: 'Lato', sans-serif;
+	text-transform: none;
+	color: orage;
+	margin: 50px auto 10px auto;
+	font-weight: 700;
+  font-family: 'Leckerli One', cursive;
+}
+
+#gallery .gallery {
+	margin: 0px 80px;
+}
+
+#gallery .no-gutter > [class*="col-"] {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+#gallery .caption-content {	
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.8); 
+    color: #f1f1f1;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: .5s ease;
+}
+
+#gallery .portfolio-item:hover .caption-content {
+	bottom: 0;
+	height: 100%;
+}
+
+#gallery .caption-content .fa {
+	white-space: nowrap;
+	color: white;
+	font-size: 40px;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	
+}
+
+#gallery .more-img {
+	margin: 0 80px;
+	background-color: orange
+    ;
+}
+
+#gallery .more-img .to-gallery {
+	text-align: center;
+	text-transform: none;
+	color: #fff;
+	padding: 10px;
+	margin: 0px auto;
+}
+
+#gallery .more-img .to-gallery h4 {
+	text-transform: none;
+	color: #fff;
+	padding: 5px;
+	margin: auto;
+	font-size: 16px;
+  font-family: 'Leckerli One', cursive;
+}
+
+#gallery .more-img .social-networks .fa {
+	font-size: 20px;
+	margin: 5px 5px;
+	color: #fff;
+}
+
+#gallery .more-img .social-networks .fa:hover {
+	color: #ffc266;
+}
+
+
+
+/* ******* Our staff ******* */
+
+
+
+#play .thumbnail-row {
+	margin: auto 60px;
+}
+
+#play h3 {
+	font-family: 'Leckerli One', cursive;
+	text-transform: none;
+	color: #444;
+	margin: 50px auto 10px auto;
+}
+
+#play img {
+	margin-bottom: 10px;
+}
+
+#play  h5 {
+	color: #353535;
+	font-family: 'Leckerli One', cursive;
+	font-size: 18px;
+}
+
+#play  h6 {
+	color: #555;
+	font-size: 16px;
+  font-family: 'Leckerli One', cursive;
+}
+
+#play img:hover {
+	box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.9);
+	transition: .3s;
+}
+
+
+
+/* ******* Testimonials ******* */
+#testimonials .hr-testimonials {
+	border: 1px solid #222;
+	width: 50%;
+	margin: 0 auto 35px auto;
+  font-family: 'Leckerli One', cursive;
+}
+
+#testimonials h3 {
+	color: #353535;
+	margin: 40px auto;
+  font-family: 'Leckerli One', cursive;
+}
+
+#testimonials .carousel {
+	float: none;
+  margin: auto;
+}
+
+
+#testimonials .carousel-indicators li {
+	border: 2px solid #182c39;
+	background-color: #fff;
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+}
+
+#testimonials .carousel-indicators li.active {
+	border-color: #fff;
+	background-color: #182c39;
+}
+
+
+
+#testimonials .carousel-item h4 {
+	font-size: 18px;
+	line-height: 1.2em;
+	font-weight: 500;
+	padding-bottom: 20px;
+  font-family: 'Leckerli One', cursive;
+  color: #353535;
+}
+
+#testimonials .carousel-item h5 {
+	font-size: 15px;
+	font-weight: 500;
+	margin-bottom: 80px;
+	font-style: italic;
+  font-family: 'Leckerli One', cursive;
+  color: #555;
+}
+
+
+
+
+/* ******* Contact ******* */
+
+#contact .form-group input, 
+#contact .form-group textarea {
+	border: 1px solid #000;
+	border-radius: 0;
+  font-family: 'Leckerli One', cursive;
+	
+	
+}
+
+#contact .form-group input:hover,
+#contact .form-group textarea:hover {
+	border-color: #ababee;
+	box-shadow: 2px 2px 2px rgba(0,0,0, .2);
+
+}
+
+#contact .contact-buttons input, 
+#contact .contact-buttons input:focus {
+	color: #fff;
+	background-color: #182c39;
+	margin: 20px auto 40px auto;
+	border-radius: 0;
+	font-weight: 500;
+	padding: 10px;
+	border: 1px solid #182c39;
+	cursor: pointer;
+  font-family: 'Leckerli One', cursive;
+}
+
+#contact .contact-buttons input:hover {
+	color: #182c39;
+	background-color: #fff;
+	
+}
+
+#contact .left-box {
+	background-color: orange;
+	margin: 0 20px;
+	font-size: 15px;
+	text-transform: none;
+	line-height: 1.8em;
+	font-weight: 500;
+	padding: 30px 50px;
+	color: #fff;
+  font-family: 'Leckerli One', cursive;
+}
+
+#contact .left-box .span-contact {
+	color: #fff;
+	font-weight: 700;
+	padding-right: 20px;
+	font-size: 17px;
+}
+
+
+/* ***** Footer ***** */
+
+#footer {
+	background-color: orange;
+	color: white;
+	font-family: 'Leckerli One', cursive;
+}
+
+#footer ul {
+	list-style-type: none;
+	padding-left: 0;
+	line-height: 2.2;
+}
+
+#footer h5 {
+	font-size: 18px;
+	color: white;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+#footer a {
+	color: #aaa;
+}
+
+#footer a:hover,
+#footer a:focus {
+	text-decoration: none;
+	color: white;
+}
+
+#footer .social-networks {
+	padding-top: 20px;
+	padding-bottom: 25px;
+}
+
+#footer .footer-items .fa {
+	font-size: 17px;
+	margin-bottom: 5px;
+	background-color: white;
+	color: #182c39;
+	border-radius: 50%;
+	padding-bottom: 25px;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	line-height: 31px;
+	text-decoration: none;
+	transition: color 1s;
+}
+
+#footer .footer-items {
+	margin: auto;
+	padding-left: 50px;
+	font-size: 15px;
+}
+
+#footer .fa-facebook:hover,
+#footer .fa-instagram:hover {
+	border: 1px solid #fff;
+	color: #fff;
+	background-color: #182c39;
+}
+
+
+.footer-copyright {
+	background-color: #e67300;
+}
+
+.footer-copyright p {
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+	padding: 10px 0;
+	margin-bottom: 0;
+  font-family: 'Leckerli One', cursive;
+}
+
+#footer .hr-foot {
+	width: 80%;
+  margin: 10px auto;
+  border: 1px solid #fff;
+}
+
+#footer .to-top {
+	color: #fff;
+	font-size: 30px;
+	position: fixed;
+	right: 12px;
+	bottom: 12px;
+	height: 40px;
+	width: 40px;
+	text-decoration: none;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.5); 
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#footer .to-top:hover {
+	background-color: #222;
+	color: #fff;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.toggles{ 
+  width: 800px;
+  margin: auto;
+  display: block;
+  
+  clear: both;
+  overflow: hidden;
+}
+
+.body{					   
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+    text-align: center;
+    align-items: center;
+                         }
+                      * {
+    box-sizing: border-box;
+  }
+  
+  
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 10px -16px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn1{
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  .btn1:hover {
+    background-color: #ddd;
+  }
+  
